@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Depositar - Banco Talento Digital</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="p-3 shadow-sm mb-4">
+        <div class="container-fluid px-4">
+            <h1 class="h4 fw-bold m-0">BANCO TALENTO DIGITAL</h1>
+        </div>
+    </header>
+
+    <main class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-6 col-lg-5">
+
+                <div class="contenedor-principal">
+                    <h2 class="text-center mb-4 fw-bold">Depositar</h2>
+
+                    <form id="form_deposito">
+                        <div class="mb-4 text-center">
+                            <label for="monto" class="form-label text-muted">Ingresa el monto a cargar</label>
+                            <div class="input-group input-group-lg">
+                                <span class="input-group-text bg-white border-end-0 text-success fw-bold">$</span>
+                                <input type="number" id="monto" class="form-control border-start-0 ps-0"
+                                    placeholder="0.00" required>
+                            </div>
+                        </div>
+
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-success btn-lg shadow-sm">
+                                Realizar depósito
+                            </button>
+                        </div>
+
+                        <p id="mensaje_feedback" class="mt-3 text-center fw-bold" style="min-height: 24px;"></p>
+
+                        <div class="mt-2 text-center border-top pt-3">
+                            <a href="menu.html" class="text-secondary text-decoration-none small">
+                                Volver al Menú Principal
+                            </a>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <script src="js/deposit.js"></script>
+</body>
+
+</html>
+
+<!-- 
+Interfaz funcional para la carga de fondos, construida con HTML y Bootstrap.
+Utiliza un componente input-group-lg para facilitar la entrada numérica del monto y un botón de acción con jerarquía visual (btn-success)
+-->
